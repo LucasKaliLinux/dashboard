@@ -14,4 +14,4 @@ Dashboard em desenvolvimento utilizando HTML, CSS e JavaScript com jQuery. Este 
 Para obter uma cópia deste projeto, basta executar o seguinte comando no seu terminal:
 
 ```bash
-git clone https://github.com/seunome/seurepositorio.git
+git clone https://github.com/LucasKaliLinux/dashboard.git
