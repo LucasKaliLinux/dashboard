@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/3c64ef68a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="flex">
+        <aside class="sidebar">
+            <header class="sidebar__header">
+                <h3 class="exit-sidebar"><i class="fa-solid fa-xmark"></i></h3>
+                <h3>DJS_Studio</h3>
+            </header><!--sidebar__header-->
+            <nav class="sidebar__menu">
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-clipboard"></i>Painel</a></li>
+                    <li><a href="#"><i class="fa-regular fa-clone"></i>Conteudo</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chart-simple"></i>Estatísticas</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Configurações</a></li>
+                    <li><a href="#"><i class="fa-solid fa-question"></i>Duvidas</a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i>usuarios</a></li>
+                </ul>
+            </nav><!--sidebar__menu-->
+        </aside><!--sidebar-->
+
+        <!--FIM DA SIDEBAR-->
+
+        <main class="main-content">
+            <header class="flex">
+                <div class="bars"><h2><i class="fa-solid fa-bars"></i></h2></div>
+                <div class="dominio"><p>test.com.br</p></div><!--dominio-->
+                <div class="linha-sep"></div><!--linha-sep-->
+                <div class="email"><p>Lucaselisiomedrado@gmail.com</p></div><!--email-->
+                <div class="square-vazio"></div><!--square-vazio-->
+                <div class="icone-alerta">
+                    <p>2</p>
+                    <i class="fa-regular fa-bell"></i><!--bell-->
+                </div><!--icone-alerta-->
+                <div class="campo-pesquisa">
+                    <i class="fa fa-search inline"></i><form class="inline"><input type="text"></form>
+                </div><!--campo-pesquisa-->
+            </header><!--flex-->
+
+            <main class="content-wrapper flex">
+                <section class="content1">
+                    <div class="painel w100">
+                        <h2>Olá Lucas, Seja Bem Vindo de volta</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ab quidem assumenda, magnam ex cum quae quasi est quis id recusandae, aperiam nihil consequuntur optio? Illo quaerat voluptate corrupti sequi.</p>
+                    </div><!--painel-->
+
+                    <div class="painel w100">
+                        <h2>O que você gostaria de fazer?</h2>
+                        <button class="btn-painel">Alterar o conteudo de uma pagina</button>
+                        <button class="btn-painel">Quantas pessoas acessaram o meu site?</button>
+                        <button class="btn-painel">Solicitar uma alteração no codigo</button>
+                        <button class="btn-painel">Permitir que outra pessoa acesse e edite o site</button>
+                        <button class="btn-painel">Alterar meu cadastro</button>
+                        <button class="btn-painel">Escrever um artigo para o blog</button>
+                        <button class="btn-painel">visualizar meu site</button>
+                    </div><!--painel-->
+
+                    <div class="painel w100">
+                        <h2>Deixe um anotação.</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="titulo" id="titulo" placeholder="Título">
+                            </div><!--form-group-->
+                            <div class="form-group" >
+                                <input type="text" name="titulo" id="titulo" placeholder="Para quem">
+                            </div><!--form-group-->
+                            <div class="form-group" >
+                                <textarea placeholder="O que você gostaria de anotar?" name="anotacao" id="anotacao"></textarea>
+                            </div><!--form-group-->
+                            <div class="form-group">
+                                <input class="btn-painel" type="submit" value="Deixa a anotação!">
+                            </div><!--form-group-->
+                        </form>
+                    </div><!--painel-->
+                    <div class="painel w100">
+                        <h2>Abra um ticket.</h2>
+                        <p>Não encontrou uma solução na página de <strong>Perguntas Frequentes?</strong></p>
+                        <button class="btn-painel">Solicite um suporte</button>
+                    </div><!--painel-->
+
+                </section><!--content1-->
+                <section class="ultimas-atividades">
+                    <div class="atividade-title">
+                        <h2>Ultimas atividades</h2>
+                    </div><!--atividade-title-->
+
+                    <div class="atividade-single">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <h3>Há 3 minutos</h3>
+                        <h2>Nova página inserida</h2>
+                        <p>A pagina <strong>Sobre</strong> foi inserida pelo Desenvolvedor.</p>
+                    </div><!--atividade-single-->
+
+                    <div class="atividade-single">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <h3>Hoje - 8H30</h3>
+                        <h2>Uma pagina foi editada</h2>
+                        <p>A pagina <strong>contato</strong> foi editada por Lucas</p>
+                    </div><!--atividade-single-->
+
+                    <div class="atividade-single">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <h3>Ontem - 22h45</h3>
+                        <h2>Uma categoria foi criada</h2>
+                        <p>A categoria <strong>Reliquias</strong> foi criada na pagina Sobre por Lucas</p>
+                    </div><!--atividade-single-->
+
+                    <div class="atividade-single">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                        <h3>26 de abril - 15h30</h3>
+                        <h2>O painel foi atualizado</h2>
+                        <p>Seu painel foi atualizado para a versão 1.2.5. <strong>Veja as novidades.</strong></p>
+                    </div><!--atividade-single-->
+                </section><!--ultimas-atividades-->
+            </main><!--content-wrapper-->
+        </main><!--main-content-->
+    </div><!--flex-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

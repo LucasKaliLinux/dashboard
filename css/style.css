@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.flex{
+    display: flex;
+    height: 100%;
+}
+
+aside.sidebar{
+    width: 230px;
+    height: 100%;
+    background-color: #2D3035;
+}
+
+aside.sidebar .sidebar__header{
+    background-color: #26282D;
+    text-align: center;
+    padding: 24px 10px;
+    position: relative;
+}
+
+.sidebar__header h3{
+    color: white;
+}
+
+.sidebar__header .exit-sidebar{
+    display: none;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    cursor: pointer;
+}
+
+nav.sidebar__menu{
+    padding: 40px 15px;
+    height: 70px;
+}
+
+nav.sidebar__menu ul{
+    list-style-type: none;
+}
+
+nav.sidebar__menu ul li{
+    margin-bottom: 20px;
+}
+
+nav.sidebar__menu ul li a{
+    color: #878787;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav.sidebar__menu ul li i{
+    width: 32px;
+    text-align: center;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+nav.sidebar__menu ul li:hover i{
+    color: #6D3BBB;
+}
+
+nav.sidebar__menu ul li:hover a{
+    color: white;
+}
+
+/* main */
+
+.inline{
+    display: inline-block;
+}
+
+main.main-content{
+    width: calc(100% - 230px);
+    /*overflow-y: scroll; O menino que faz o scroll acotnecer*/
+}
+
+main.main-content header.flex{
+    height: 70px;
+    background-color: white;
+    padding: 0 18px;
+    border-bottom: 2px solid #ccc;
+
+    justify-content: right;
+    align-items: center;
+    gap: 2vw;
+}
+
+main.main-content header .bars{
+    display: none;
+    cursor: pointer;
+}
+
+main.main-content header .linha-sep{
+    height: 100%;
+    width: 1px;
+    background-color: #ccc;
+}
+
+div.square-vazio{
+    background-color: #bbbbbb;
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+}
+
+div.icone-alerta{
+    width: 38px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #FBEDEF;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+div.icone-alerta i{
+    line-height: 38px;
+    font-size: 20px;
+    color: #ED7387;
+}
+
+div.icone-alerta p{
+    position: absolute;
+    right: -6px;
+    top: -6px;
+    
+    background-color: #ED7387;
+    font-size: 10px;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+div.campo-pesquisa i{
+    background-color: #D6D6D6;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: 0.6s;
+}
+
+div.campo-pesquisa i:hover{
+    background-color: rgb(218, 218, 218);
+    color: #6D3BBB;
+}
+
+div.campo-pesquisa form{
+    display: none;
+}
+
+div.campo-pesquisa input[type=text]{
+    width: 0px;
+    height: 38px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    font-size: 16px;
+    outline: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main.content-wrapper{
+    background-color: #FAF9FC;
+}
+
+main.content-wrapper section.content1{
+    width: 65%;
+    padding: 30px;
+    overflow-y: auto;
+    height: calc(100% -  70px);
+}
+
+section.content1::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 5px;
+}
+
+section.content1::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5px;
+}
+
+main.content-wrapper section.content1 .painel{
+    padding: 30px;
+    border: 2px solid #Ebebeb;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+section.content1 .painel h2{
+    color: #7f7f7f;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+section.content1 .painel p{
+    font-size: 16px;
+    color: #B2B2B2;
+    margin-bottom: 15px;
+}
+
+section.content1 .painel .form-group{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section.content1 .painel .form-group input[type=text]{
+    width: 100%;
+    padding: 12px 12px;
+    outline: 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+section.content1 .painel .form-group textarea{
+    padding: 12px;
+    width: 100%;
+    resize: none;
+    height: 150px;
+    outline: 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+section.content1 .painel .btn-painel{
+    padding: 6px 10px;
+    background-color: gray;
+    color: white;
+    border: 0;
+    border-radius: 40px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section.content1 .painel .btn-painel:hover{
+    background-color: rgb(155, 155, 155);
+}
+
+section.ultimas-atividades{
+    width: 35%;
+    background-color: #EAEBEB;
+    padding: 20px 55px;
+    overflow-y: auto;
+    height: calc(100% -  70px);
+}
+
+section.ultimas-atividades::-webkit-scrollbar{
+    width: 1px;
+}
+
+section.ultimas-atividades .atividade-title{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+
+section.ultimas-atividades .atividade-title h2{
+    color: #7f7f7f;
+    font-size: 23px;
+    font-weight: normal;
+    padding: 15px;
+}
+
+.atividade-single{
+    position: relative;
+    height: 180px;
+}
+
+.atividade-single .line{
+    width: 2px;
+    height: inherit;
+    background-color: #ccc;
+
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+
+.atividade-single .circle{
+    width: 20px;
+    height: 20px;
+    background-color: #EAEBEB;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: -33px;
+}
+
+.atividade-single h3{
+    color: #b8b8b8;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.atividade-single h2{
+    font-size: 18px;
+    color: #8b8b8b;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+
+.atividade-single p{
+    color: #B2B2B2;
+    font-size: 16px;
+}
+
+.atividade-single p strong{
+    text-decoration: underline;
+    color: #9b9b9b;
+}
+
+/* Media query a partir do 1150*/

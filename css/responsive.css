@@ -1,0 +1,66 @@
+@media screen and (max-width: 1045px){
+    .w50{
+        width: 100%;
+    }
+    
+    main.main-content header.flex{
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+    }
+
+    main.main-content header .email{
+        display: none;
+    }
+
+    main.main-content header .dominio{
+        display: none;
+    }
+    
+    main.main-content header .linha-sep{
+        display: none;
+    }
+    
+    div.square-vazio{
+        display: none;
+    }
+
+    main.content-wrapper section.content1{
+        width: 100%;
+    }
+    
+    section.ultimas-atividades{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main.main-content header .bars{
+        display: block;
+    }
+
+    .icone-alerta{
+        display: none;
+    }
+
+    aside.sidebar{
+        display: none;
+        position: absolute;
+        width: 0;
+        top:0;
+        left: 0;
+        z-index: 3;
+    }
+
+    aside.sidebar header.sidebar__header, aside.sidebar nav.sidebar__menu{
+        display: none;
+    }
+
+    .sidebar__header .exit-sidebar{
+        display: block;
+    }
+
+    main.main-content{
+        width: 100%;
+    }
+}
